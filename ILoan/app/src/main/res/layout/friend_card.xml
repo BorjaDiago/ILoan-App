@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.FriendCardView">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_friend"
+        android:layout_width="368dp"
+        android:layout_height="375dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linear_friend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/frien_card_image"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="19"
+                app:srcCompat="@drawable/iloan_logo"
+                android:contentDescription="@string/logoPortada"/>
+
+            <TextView
+                android:id="@+id/friend_card_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/name"
+                android:textSize="20sp"
+                android:textColor="@color/primary_text"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/friend_card_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/surname"
+                android:textSize="20sp"
+                android:textColor="@color/primary_text"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/friend_card_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/phone"
+                android:textSize="20sp"
+                android:textColor="@color/primary_text"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

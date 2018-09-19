@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ana.iloan">
+
+    <uses-feature android:name = "android.hardware.camera" android:required = "false" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MyTheme"
+        tools:replace="android:theme"
+        >
+        <activity android:name=".views.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.ILoanMenu"
+            android:screenOrientation="portrait"
+            android:label="@string/menu"/>
+        <activity
+            android:name=".views.ILoanFriends"
+            android:screenOrientation="portrait"
+            android:label="@string/friends"/>
+        <activity
+            android:name=".views.ILoanItems"
+            android:screenOrientation="portrait"
+            android:label="@string/items"/>
+        <activity
+            android:name=".views.ILoans"
+            android:screenOrientation="portrait"
+            android:label="@string/loans"/>
+        <activity
+            android:name=".views.FriendListScreen"
+            android:screenOrientation="portrait"
+            android:label="Friend List"/>
+        <activity
+            android:name=".views.ItemListScreen"
+            android:screenOrientation="portrait"
+            android:label="Item List"/>
+        <activity
+            android:name=".views.FriendCardView"
+            android:screenOrientation="portrait"
+            android:label="Friend Detail"/>
+        <activity
+            android:name=".views.ItemCardView"
+            android:screenOrientation="portrait"
+            android:label="Item Detail"/>
+        <activity
+            android:name=".views.LoanListScreen"
+            android:screenOrientation="portrait"
+            android:label="Loans List"/>
+        <activity
+            android:name=".views.LoanCardView"
+            android:screenOrientation="portrait"
+            android:label="Loan Detail"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.ILoanItems"
+    android:background="@color/custom3"
+    tools:layout_editor_absoluteY="81dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/title_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@color/primary_light"
+            android:hint="@string/title"
+            android:inputType="textCapWords"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/kind_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@color/primary_light"
+            android:hint="@string/kind"
+            android:inputType="textCapWords"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/genre_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@color/primary_light"
+            android:hint="@string/genre"
+            android:inputType="textCapWords"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/year_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@color/primary_light"
+            android:hint="@string/year"
+            android:inputType="number"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/title_photo_add_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/click_on_image_to_set"
+            android:textAlignment="center"
+            android:textColor="@color/primary_text"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/imagen_add_item"
+            android:layout_width="match_parent"
+            android:layout_height="212dp"
+            android:background="@color/primary_light"
+            android:hint="@string/image"
+            android:inputType="text"
+            android:src="@drawable/iloan_logo"
+            android:contentDescription="@string/logoPortada"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/add_item"
+        android:background="@color/primary_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

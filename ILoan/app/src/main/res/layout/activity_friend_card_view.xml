@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.FriendCardView"
+    android:background="@color/custom3">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_friend_activity"
+        android:layout_width="368dp"
+        android:layout_height="375dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/primary_light"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linear_friend_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/primary_light"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/friend_card_image_activity"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="19"
+                app:srcCompat="@drawable/iloan_logo"
+                android:contentDescription="@string/logoPortada"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/friend_card_name_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/name"
+                android:textSize="20sp"
+                android:textColor="@color/primary_text"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:id="@+id/friend_card_surname_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/surname"
+                android:textSize="20sp"
+                android:textColor="@color/primary_text"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/friend_card_phone_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/click_here_to_call"
+                android:onClick="callPhone"
+                android:textSize="20sp"
+                android:textColor="@color/primary_text"
+                android:textAlignment="center"
+                android:background="@color/custom"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <ImageButton
+        android:id="@+id/fab_friend_card"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/back_button"
+        android:contentDescription="@string/back_button"
+        android:src="@drawable/back_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_friend_activity"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/delete_friend_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/delete_icon" />
+
+
+</android.support.constraint.ConstraintLayout>
