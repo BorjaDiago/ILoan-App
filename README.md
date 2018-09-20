@@ -8,4 +8,4 @@ beginning of the loan as an end date for its return. With a simple and intuitive
 The following image shows the relationship diagram that represents the
 data model used in the Eloan application.
 
-<img src="/ImágenesILoan/DiagramaILoan.png">
+<img src="https://github.com/BorjaDiago/ILoan-App/blob/master/ILoan/Im%C3%A1genes%20ILoan/DiagramaILoan.png">
