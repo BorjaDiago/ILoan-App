@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1086764960718",
+    "firebase_url": "https://iloan-4cb60.firebaseio.com",
+    "project_id": "iloan-4cb60",
+    "storage_bucket": "iloan-4cb60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086764960718:android:18bab7adff3cf368",
+        "android_client_info": {
+          "package_name": "com.example.ILoan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086764960718-35mjtcnipd1gvsr65is27ui3idd8d7ek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaCckjA-ipiOvGlwWtijD3nyKjjhs5TOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086764960718-35mjtcnipd1gvsr65is27ui3idd8d7ek.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
